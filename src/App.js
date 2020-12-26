@@ -11,6 +11,11 @@ function App() {
           <button className="btn">toggle</button>
         </div>
       </nav>
+      <section className="article">
+        {data.map((item) => {
+          return <Article key={item.id} {...item} />;
+        })}
+      </section>
     </main>
   );
 }
